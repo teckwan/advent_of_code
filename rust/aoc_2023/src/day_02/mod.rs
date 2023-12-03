@@ -53,10 +53,22 @@ fn part_2(games: &str) -> u32 {
                     let color: &str = a.next().unwrap();
 
                     match color {
-                        "red" => if count > max_red { max_red = count }
-                        "green" => if count > max_green { max_green = count },
-                        "blue" => if count > max_blue { max_blue = count },
-                        _ => {},
+                        "red" => {
+                            if count > max_red {
+                                max_red = count
+                            }
+                        }
+                        "green" => {
+                            if count > max_green {
+                                max_green = count
+                            }
+                        }
+                        "blue" => {
+                            if count > max_blue {
+                                max_blue = count
+                            }
+                        }
+                        _ => {}
                     }
                 }
             }

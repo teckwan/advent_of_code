@@ -12,27 +12,49 @@ fn part_1(input: &str) -> u32 {
 
 fn extract_word_to_digit(word: &str, reverse: bool) -> Option<u32> {
     if reverse {
-        if word.ends_with("one") { Some(1) }
-        else if word.ends_with("two") { Some(2) }
-        else if word.ends_with("three") { Some(3) }
-        else if word.ends_with("four") { Some(4) }
-        else if word.ends_with("five") { Some(5) }
-        else if word.ends_with("six") { Some(6) }
-        else if word.ends_with("seven") { Some(7) }
-        else if word.ends_with("eight") { Some(8) }
-        else if word.ends_with("nine") { Some(9) }
-        else { None }
+        if word.ends_with("one") {
+            Some(1)
+        } else if word.ends_with("two") {
+            Some(2)
+        } else if word.ends_with("three") {
+            Some(3)
+        } else if word.ends_with("four") {
+            Some(4)
+        } else if word.ends_with("five") {
+            Some(5)
+        } else if word.ends_with("six") {
+            Some(6)
+        } else if word.ends_with("seven") {
+            Some(7)
+        } else if word.ends_with("eight") {
+            Some(8)
+        } else if word.ends_with("nine") {
+            Some(9)
+        } else {
+            None
+        }
     } else {
-        if word.starts_with("one") { Some(1) }
-        else if word.starts_with("two") { Some(2) }
-        else if word.starts_with("three") { Some(3) }
-        else if word.starts_with("four") { Some(4) }
-        else if word.starts_with("five") { Some(5) }
-        else if word.starts_with("six") { Some(6) }
-        else if word.starts_with("seven") { Some(7) }
-        else if word.starts_with("eight") { Some(8) }
-        else if word.starts_with("nine") { Some(9) }
-        else { None }
+        if word.starts_with("one") {
+            Some(1)
+        } else if word.starts_with("two") {
+            Some(2)
+        } else if word.starts_with("three") {
+            Some(3)
+        } else if word.starts_with("four") {
+            Some(4)
+        } else if word.starts_with("five") {
+            Some(5)
+        } else if word.starts_with("six") {
+            Some(6)
+        } else if word.starts_with("seven") {
+            Some(7)
+        } else if word.starts_with("eight") {
+            Some(8)
+        } else if word.starts_with("nine") {
+            Some(9)
+        } else {
+            None
+        }
     }
 }
 
